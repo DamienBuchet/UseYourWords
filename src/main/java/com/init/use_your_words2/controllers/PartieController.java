@@ -81,6 +81,8 @@ public class PartieController {
 		if (mancheCount >= 5)
 		{
 			model.addAttribute("listescore", IJRepo.findTop3BestScorePartie(partie.getId()));
+			Joueur j = (IJRepo.findById((Integer) session.getAttribute("JoueurSession"))).get();
+            		UseYourWords2Application.jaxbObjectToXML(j);
 			return "scoreboard";
 			
 		} else
