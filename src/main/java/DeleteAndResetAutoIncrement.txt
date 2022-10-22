@@ -1,0 +1,20 @@
+DELETE FROM equipe;
+DBCC CHECKIDENT (equipe, RESEED, 0);
+
+DELETE FROM joueur;
+DBCC CHECKIDENT (joueur, RESEED, 0);
+
+DELETE FROM joueur_manche_partie;
+DBCC CHECKIDENT (joueur_manche_partie, RESEED, 0);
+
+DELETE FROM manche;
+DBCC CHECKIDENT (manche, RESEED, 0);
+
+DELETE FROM partie;
+DBCC CHECKIDENT (partie, RESEED, 0);
+
+DELETE FROM proposition;
+DBCC CHECKIDENT (proposition, RESEED, 0);
+
+DELETE FROM score_board;
+DBCC CHECKIDENT (score_board, RESEED, 0);
